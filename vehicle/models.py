@@ -6,6 +6,7 @@ class Customer(models.Model):
     profile_pic= models.ImageField(upload_to='profile_pic/CustomerProfilePic/',null=True,blank=True)
     address = models.CharField(max_length=40)
     mobile = models.CharField(max_length=20,null=False)
+    email  = models.EmailField(null=False)
     @property
     def get_name(self):
         return self.user.first_name+" "+self.user.last_name
@@ -21,6 +22,7 @@ class Mechanic(models.Model):
     address = models.CharField(max_length=40)
     mobile = models.CharField(max_length=20,null=False)
     skill = models.CharField(max_length=500,null=True)
+    email  = models.EmailField(null=False)
     salary=models.PositiveIntegerField(null=True)
     status=models.BooleanField(default=False)
     @property

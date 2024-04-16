@@ -13,7 +13,7 @@ class CustomerUserForm(forms.ModelForm):
 class CustomerForm(forms.ModelForm):
     class Meta:
         model=models.Customer
-        fields=['address','mobile','profile_pic']
+        fields=['address','mobile','email','profile_pic']
 
 
 class MechanicUserForm(forms.ModelForm):
@@ -27,7 +27,7 @@ class MechanicUserForm(forms.ModelForm):
 class MechanicForm(forms.ModelForm):
     class Meta:
         model=models.Mechanic
-        fields=['address','mobile','profile_pic','skill']
+        fields=['address','mobile','profile_pic','skill','email']
 
 class MechanicSalaryForm(forms.Form):
     salary=forms.IntegerField();
