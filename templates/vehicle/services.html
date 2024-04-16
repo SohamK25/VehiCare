@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VehiCare | Our Services</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        body {
+            background:rgba(7, 5, 50, 0.881);
+            padding: 0px;
+            margin-bottom: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main_block{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .cards {
+            background-color: white;
+            width: 350px;
+            height: 450px;
+            border-radius: 10px;
+            margin: 10px;
+            margin: 25px;
+            text-align: center;
+            size: 50px;
+            box-shadow: 5px black;
+        }
+
+        .cards:hover {
+            transform: scale(1.05);
+            transition: 0.5s;
+            background-color:rgba(7, 5, 50, 0.881)
+        }
+
+        .cards:hover h1 {
+            color: white;
+        }
+
+        .cards:hover p {
+            color: white;
+        }
+
+        image {
+            padding: 25px;
+        }
+
+        .content {
+            font-size: medium;
+            font-style: italic;
+            color: gray;
+            padding: 5px 15px;
+            text-align: center;
+        }
+
+        .content p {
+            font-size: medium;
+            font-style: italic;
+            color: black;
+            padding: 5px 0;
+        }
+
+        .top {
+            display: flex;
+            margin-left: 25px;
+        }
+
+        .bottom {
+            display: flex;
+            margin-left: 210px;
+        }
+    </style>
+</head>
+
+<body>
+{% include "vehicle/new_nav.html" %}
+<br><br>
+<div class="main_block">
+    <h1 style="color: beige;">Our Services</h1>
+    <div class="top">
+        <div class="cards">
+            <div class="image">
+                <img width="250" src="/static/images/bike-repairing-services-500x500.png" alt="">
+            </div>
+            <div class="content">
+                <h2>2-Wheeler Servicing</h2>
+                <p>Two-wheeler servicing includes oil change, filter replacement, brake inspection, and overall
+                    maintenance to ensure optimal performance and safety of motorcycles and scooters. 
+                </p>
+            </div>
+        </div>
+
+
+        <div class="cards">
+            <div class="image">
+                <img width="250" src="/static/images/4-wheeler.png" alt="">
+            </div>
+            <div class="content">
+                <h2>4-Wheeler Servicing</h2>
+                <p>Four-wheeler servicing involves oil and filter changes, brake and suspension checks, tire rotation,
+                    and engine diagnostics for smooth operation and safety of cars and trucks.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="cards">
+            <div class="image">
+                <img width="250" src="/static/images/car-wash.png" alt="">
+            </div>
+            <div class="content">
+                <h2>Cleaning & Washing</h2>
+                <p>Vehicle washing involves exterior cleaning with water, soap, and brushes, followed by rinsing and
+                    drying. Optional interior cleaning and detailing services may also be available.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="cards">
+            <div class="image">
+                <img width="250" src="/static/images/interior-care.png" alt="">
+            </div>
+            <div class="content">
+                <h2>Cushioning & Interior</h2>
+                <p>Servicing of cushionig includes cleaning and conditioning of seats, dashboard, and cabin surfaces.Also replacements is done if necessory.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="cards">
+            <div class="image">
+                <img width="250" src="/static/images/pickup.png" alt="">
+            </div>
+            <div class="content">
+                    <h2>Pick-up & Drop</h2>
+                    <p>Vehicle pick-up and drop-off service facilitates convenience by collecting the vehicle from the customer's location for servicing and returning it post-service completion.
+                    </p>
+                </div>
+            </div>
+    </div>
+</div>
+<br><br>
+{% include "vehicle/footer.html" %}
+</body>
+</html>

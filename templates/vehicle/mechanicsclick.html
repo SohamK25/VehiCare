@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    body {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('/static/images/mechanic11.png'); 
+      background-size:1600px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+
+    p{
+      margin: 0%;
+      padding: 0%;
+    }
+    h2{
+      text-align: center;
+      color:white;
+    }
+    .btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      color: var(--white);
+      background-color:#da042a;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      color: #c00427;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  {% include "vehicle/new_nav.html" %}
+ 
+  <div class="jumbotron" style="margin-bottom:0px;"><br><br><br><br><br>
+    <h1>Hello, Mechanic</h1>
+    <p class="lead"><h2>Welcome to <b>VehiCare</b></h2></p>
+    <p><h2>You can access various features after Login.</h2></p><br><br>
+    <p class="lead">
+      <a href="mechanicsignup" class="btn">Apply For Job</a>
+      <a href="mechaniclogin" class="btn">Login</a>
+    </p><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+
+
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>

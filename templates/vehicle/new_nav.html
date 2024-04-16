@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    <style>
+        nav {
+            padding: 1rem 0rem;
+            position: static;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1d1d2f;
+          }
+        
+          .nav__bar {
+            padding: 0rem;
+            background-color: #1d1d2f;
+          }
+        
+          .nav__menu__btn {
+            display: none;
+          }
+        
+          .nav__links {
+            padding: 0;
+            width: unset;
+            position: static;
+            transform: none;
+            flex-direction: row;
+            background-color: transparent;
+            gap: 1rem;
+          }
+        
+          .header {
+            padding-top: 0;
+            padding-bottom: 0;
+            background-color: #1d1d2f;
+          }
+        
+          .header__content h1 {
+            font-size: 5rem;
+            line-height: 6rem;
+          }
+
+          .logo img{
+            max-width: 120px;
+          }
+
+          .logo img:hover{
+            transform: scale(1.10);
+            transition: 0.5s;
+          }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+          <div class="nav__bar">
+            <div class="logo nav__logo">
+              <a href="#"><img src="{% static "images/Logo (1).png" %}" alt="logo" /></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <i class="ri-menu-3-line"></i>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/customerclick">CUSTOMER</a></li>
+            <li><a href="/mechanicsclick">MECHANIC</a></li>
+            <li><a href="/adminclick">ADMIN</a></li>
+            <li><a href="/services">OUR SERVICES</a></li>
+            <a href="/contactus" class="btn">Contact Us</a>
+          </ul>
+        </nav>
+    </header>
+</body>
+</html>
