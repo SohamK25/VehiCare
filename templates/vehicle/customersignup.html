@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             font-family: sans-serif;
-            background: rgba(7, 5, 50, 0.881);
+            background: rgba(7, 5, 50, 0.881) url('/static/images/image_graphics.svg');
         }
 
         .box {
@@ -51,7 +51,7 @@
 
         .box input[type="text"]:focus,
         .box input[type="password"]:focus,
-        .box input[type= "email"]:focus,
+        .box input[type="email"]:focus,
         .box input[type="file"]:focus {
             width: 300px;
             border-color: #2ecc71
@@ -164,7 +164,6 @@
                         {% render_field customerForm.mobile class="form-control" placeholder="Mobile" %}
                         {% render_field customerForm.email class="form-control" placeholder="Email" %}
                         {% render_field customerForm.profile_pic class="form-control" placeholder="Profile pic" %}
-
 
                         <input type="submit" name="" value="Create">
 
