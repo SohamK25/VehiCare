@@ -10,30 +10,80 @@
       padding-top: 0rem;
       padding-bottom: 0rem;
       margin: 0px;
-      background-color: transparent;
+      background: rgb(24, 23, 23) url(/static/images/image_graphics.svg) center/ 510px repeat;
     }
 
     
-    .section1{
-      background-image: url('/static/images/image.png');
-      background-size:contain;
+    .sector1{
+      background: #211f1f url('/static/images/new_bg.png');
+      background-size:cover;
       background-repeat: no-repeat;
       padding: 0%;
-      margin: 0%;
+      border-radius: 1%;
     }
 
     h1:hover{
       transform: scale(1.05);
       transition: 0.5s;
-      color:rgba(7, 5, 50, 0.881)
+      
+    }
+
+    h1{
+      padding: 5px;
+      margin-left: 20px;
     }
     
-    .section2{
+    .sector2{
       text-align: center;
-      background-color: midnightblue;
+      background-color: black;
       padding: 0%;
       margin: 0%;
+      color: white;
     }
+
+    
+
+    .image-info-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: rgb(24, 23, 23) url(/static/images/image_graphics.svg) center/ 510px repeat;
+  }
+  
+  .image-container {
+      flex: 1;
+      margin-right: 20px;
+      
+  }
+  
+  .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 2%;
+  }
+  
+  .info-container {
+      flex: 1;
+  }
+  
+  .info-container h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+  }
+
+  .info-container h2:hover{
+    opacity: 0.5;
+    color: #da042a;
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  
+  .info-container p {
+      font-size: 20px;
+      line-height: 1.6;
+  }
+    
   </style>
 
 </head>
@@ -41,7 +91,7 @@
 <body>
   {% include "vehicle/new_nav.html" %}
 
-  <div class="section1">
+  <div class="sector1">
     <div class="header__content">
       <h1>Simplify servicing, <br>Amplify satisfaction.</h1>
       <div class="header__btn"></div>
@@ -50,36 +100,21 @@
     <br><br><br><br><br><br><br><br><br>
   </div>
 
-  <div class="section2">
-    <h3>WHY CHOOSE VEHICARE</h3>
-    <div class="paras">
-      <h2>Integrity</h2>
-      <p>Our foundation for trust, transparency, and reliability.</p>
-    </div>
+  <div class="sector2 pattern">
+    <section class="image-info-section">
+      <div class="image-container">
+          <img src="/static/images/intro1.png" alt="Image">
+      </div>
+      <div class="info-container">
+          <h2>VehiCare</h2>
+          <p>A smart solution designed to make managing vehicle servicing efficient and easy. It's an all-in-one platform that simplifies how customers request service, how mechanics handle tasks. </p>
+      </div>
+  </section>
+  
 
-    <div class="paras">
-      <h2>Respect</h2>
-      <p>Every customer is valued, heard, and treated with dignity.</p>
-    </div>
+   
 
-    <div class="paras">
-      <h2>Responcibilty</h2>
-      <p>Taking ownership and delivering on our commitments.</p>
-    </div>
-
-    <div class="paras">
-      <h2>Empathy</h2>
-      <p>Listening actively, understanding needs, and providing tailored solutions.</p>
-    </div>
-
-    <div class="paras">
-      <h2>Professionalism</h2>
-      <p>Operating with competence and maintaining a welcoming environment.</p>
-    </div>
-  </div>
-  <br><br><br><br><br><br><br><br><br>
-
-  {% include "vehicle/footer.html" %}
+{% include "vehicle/footer.html" %}
 </body>
 
 </html>
