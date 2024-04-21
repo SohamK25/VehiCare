@@ -3,7 +3,7 @@
 {% block content %}
 <head>
   <style media="screen">
-    input[type=text], select,input[type=number] ,input[type=password], textarea{
+    input[type=text], select,input[type=number] ,input[type=password], input[type=email],textarea{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -46,6 +46,10 @@
         {% render_field userForm.last_name class="form-control" placeholder="Last Name" %}
         <label for="mobile">Mobile</label>
         {% render_field mechanicForm.mobile class="form-control" placeholder="Mobile" %}
+
+        <label for="mobile">Email</label>
+        {% render_field mechanicForm.email class="form-control" placeholder="Email" %}
+
         <label for="address">Address</label>
         {% render_field mechanicForm.address class="form-control" placeholder="Address" %}
 
