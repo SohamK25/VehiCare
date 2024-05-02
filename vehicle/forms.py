@@ -5,7 +5,7 @@ from . import models
 class CustomerUserForm(forms.ModelForm):
     class Meta:
         model=User
-        fields=['first_name','last_name','username','password']
+        fields=['first_name','last_name','username','password','email']
         widgets = {
         'password': forms.PasswordInput()
         }
@@ -13,13 +13,13 @@ class CustomerUserForm(forms.ModelForm):
 class CustomerForm(forms.ModelForm):
     class Meta:
         model=models.Customer
-        fields=['address','mobile','email','profile_pic']
+        fields=['address','mobile','profile_pic']
 
 
 class MechanicUserForm(forms.ModelForm):
     class Meta:
         model=User
-        fields=['first_name','last_name','username','password']
+        fields=['first_name','last_name','username','password','email']
         widgets = {
         'password': forms.PasswordInput()
         }
@@ -27,7 +27,7 @@ class MechanicUserForm(forms.ModelForm):
 class MechanicForm(forms.ModelForm):
     class Meta:
         model=models.Mechanic
-        fields=['address','mobile','profile_pic','skill','email']
+        fields=['address','mobile','profile_pic','skill']
 
 class MechanicSalaryForm(forms.Form):
     salary=forms.IntegerField();
