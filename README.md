@@ -16,7 +16,7 @@ Mechanic Module:
 •	Feedback Submission
 •	Profile Management
 Admin Module:
-•	Login (For login use following command in the terminal: python manage.py createsuperuser)
+•	Login (For login use following command in the terminal: \```python manage.py createsuperuser```\)
 •	Dashboard with Overview
 •	User Management (Customers and Mechanics)
 •	Service Request Management
@@ -27,13 +27,13 @@ Admin Module:
 Steps to run this project:
 •	Install Python (Don't forget to tick on Add to Path while installing)
 •	After installation  of Python open terminal and execute following commands:
-	pip install django
-	pip install django-widgets-tweaks
+	\```pip install django
+	pip install django-widgets-tweaks```\
 •	Download the project zip folder and extract it in the new folder and open terminal in the folder.
 •	In terminal run following commands:
-	python manage.py makemigrations
+	\```python manage.py makemigrations
 	python manage.py migrate
-	python manage.py runserver
+	python manage.py runserver```\
 •	Execute http://127.0.0.1:8000/ in your browser and you will see the working project.
 Limitations:
 •	Dependency on Internet Access: 
